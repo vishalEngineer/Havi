@@ -31,15 +31,11 @@ if (mysqli_connect_errno()) {
     <form action="add.php" method="post">
         <input type="text" name="sample">
         <button type="submit" >Enter</button>
+        <p>View the Entered Text below</p>
     </form>
     <table border="5">
         
-        <thead>
-        <tr><td><b>S.no</b></td></tr>
-            <tr><td><b>User</b></td></tr>
-        </thead>
-        <tbody>
-            
+                    
             <?php if (count($data) > 0) : ?>
                         <?php for ($i = 0; $i < count($data); $i++) : ?>
                         <tr>
